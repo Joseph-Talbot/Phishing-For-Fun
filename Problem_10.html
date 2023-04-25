@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Problem_10</title>
+    <script src="code.js"></script>
+    <style>
+      .sidenav {
+        width: 130px;
+        position: fixed;
+        z-index: 1;
+        top: 80px;
+        left: 10px;
+        background: #ffffff;
+        overflow-x: hidden;
+        padding: 8px 0;
+      }
+
+      .sidenav a {
+        padding: 6px 8px 6px 16px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #2196F3;
+        display: block;
+      }
+
+      .sidenav a:hover {
+        color: #064579;
+      }
+
+      .main {
+        background: white;
+        margin-left: 140px; /* Same width as the sidebar + left position in px */
+        font-family: sans-serif;
+        font-size: 12px; /* Increased text to enable scrolling */
+        padding: 0px 10px;
+      }
+      .main .btn {
+        background: none;
+        color: black;
+        font-family: sans-serif;
+        font-size: 12px;
+        padding: 0px 0px;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+        text-align: center;
+      }
+
+      .rightnav{
+        width: 130px;
+        position: fixed;
+        z-index: 1;
+        top: 80px;
+        right: 10px;
+        background: #ffd9d9;
+        overflow-x: hidden;
+        padding: 8px 0;
+      }
+
+      .rightnav a {
+        padding: 6px 8px 6px 16px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #2196F3;
+        display: block;
+      }
+
+      .rightnav a:hover {
+        color: #064579;
+      }
+
+      @media screen and (max-height: 450px) {
+        .sidenav {padding-top: 15px;}
+        .sidenav a {font-size: 18px;}
+        .rightnav {padding-top: 15px;}
+        .rightnav a {font-size: 18px;}
+      }
+      #Yes {
+        color: gold;
+        font-size: 40px;
+        margin: 20px;
+        text-align: center;
+      }
+      #No {
+        color: gold;
+        font-size: 40px;
+        margin: 20px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <body style="background-color:#1fb84d">
+      <h1>Problem #10</h1>
+      
+      <div class="sidenav">
+        <a href="index.html">Info</a>
+        <a href="Finished.html">Finished?</a>
+      </div>
+
+      
+
+      <div class="main">
+        <p>
+          From:_<button id="embtn" class="btn" onclick="change('big.brain@hacker.slam','█████████████████████','embtn')" value="█████████████████████">█████████████████████</button><br>
+          To:___<button id="tobtn" class="btn" onclick="change('not.you@bad.programmer','█████████████████████','tobtn')" value="█████████████████████">█████████████████████</button><br>
+          <br>
+          Subject: Promotional AD<br>
+          <br>
+          Hello &lt;Redacted&gt;,<br>
+          <br>
+          We on behalf of all employees at BIG Prograaam Inc. would like to congradulate yuo on your BIG win!<br>
+          Below is a link to your prize.<br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+
+        </p>
+        
+      </div>
+      <br><br><br><br><br><br>
+      <p>Is this email a phishing email?</p>
+      <div class="form">
+        <a><button type="button" onclick="yes()">Yes</button></a>
+        <a><button type="button" onclick="no()">No</button></a>
+        <p id="Yes"></p>
+        <p id="No"></p>
+      </div>
+    </body>
+</html>
